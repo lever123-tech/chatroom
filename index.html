@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat Room</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Room</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div id="app">
+    <div id="sidebar" class="hidden">
+      <button id="leave-room">Leave Room</button>
+    </div>
     <div id="room-code-section" class="section">
-        <h1>Enter Room Code</h1>
-        <input type="text" id="room-code" placeholder="Room Code">
-        <button id="join-room">Join</button>
+      <h1>Create or Join a Room</h1>
+      <button id="create-room">Create Room</button>
+      <button id="join-room">Join Room</button>
     </div>
     <div id="chat-section" class="section hidden">
-        <div id="chat-area"></div>
-        <input type="text" id="message" placeholder="Type a message...">
-        <button id="send-message">Send</button>
+      <div id="chat-area"></div>
+      <input type="text" id="message" placeholder="Type a message...">
+      <button id="send-message">Send</button>
     </div>
-    <script src="scripts.js"></script>
+  </div>
+  <script src="scripts.js"></script>
 </body>
 </html>
